@@ -2,7 +2,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from matplotlib import style
 from sklearn.datasets import load_iris
-
+from sklearn import metrics
 iris = load_iris()
 # print iris
 # print iris.data
@@ -20,6 +20,10 @@ logreg = LogisticRegression()
 logreg.fit(X, y)
 
 print logreg.predict(X)
+
+print metrics.accuracy_score()
+from sklearn.cross_validation import train_test_split
+
 
 
 
